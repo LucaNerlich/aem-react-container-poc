@@ -273,6 +273,7 @@ Bundle-DocURL:
                     <extensions>true</extensions>
                     <version>1.1.6</version>
                     <configuration>
+                        <showImportPackageReport>false</showImportPackageReport>
                         <filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>
                         <validatorsSettings>
                             <jackrabbit-nodetypes>
