@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2019 Adobe
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Flex Container"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          helpPath="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+          trackingFeature="core-components:container:v1"
+          extraClientlibs="[core.wcm.components.container.v1.editor]">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container"
+            granite:class="cmp-container__editor">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured" sling:hideChildren="[properties]">
+                    <flex
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Flex"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <flexDirection
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Direction"
+                                                    name="./flexDirection">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <row
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Row"
+                                                            value="row"/>
+                                                    <rowReverse
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Row Reverse"
+                                                            value="rowReverse"/>
+                                                    <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Column"
+                                                            value="column"/>
+                                                    <columnReverse
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Column Reverse"
+                                                            value="columnReverse"/>
+                                                </items>
+                                            </flexDirection>
+                                            <flexWrap
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Wrap"
+                                                    name="./flexWrap">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <nowrap
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="NoWrap"
+                                                            value="nowrap "/>
+                                                    <wrap
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Wrap"
+                                                            value="wrap"/>
+                                                    <wrapReverse
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Wrap Reverse"
+                                                            value="wrapReverse"/>
+                                                </items>
+                                            </flexWrap>
+                                            <id
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="HTML ID attribute to apply to the component."
+                                                    fieldLabel="ID"
+                                                    name="./id"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </flex>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
