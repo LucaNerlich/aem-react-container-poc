@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/container-poc",
+        "create path (nt:unstructured) /content/dam/container-poc/jcr:content",
+        "set properties on /content/dam/container-poc/jcr:content\n  set cq:conf{String} to /conf/container-poc\n  set jcr:title{String} to \"containerpoc\"\nend"
+    ]
+}

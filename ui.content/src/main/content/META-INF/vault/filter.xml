@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/container-poc" mode="merge"/>
+    <filter root="/content/container-poc" mode="merge"/>
+    <filter root="/content/dam/container-poc/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/container-poc" mode="merge"/>
+</workspaceFilter>
