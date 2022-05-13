@@ -20,6 +20,7 @@ import {
     AllowedComponentsContainer
 } from '@adobe/aem-react-editable-components';
 
+require('Container.css')
 
 const ContainerConfig = {
     emptyLabel: 'Container',
